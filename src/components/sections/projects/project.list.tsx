@@ -44,7 +44,7 @@ export const ProjectList: React.FC<IProps> = ({ projects }) => {
           >
             <span className="relative z-10 flex items-center gap-3">
               <i className="fas fa-plus text-xl transition-transform duration-500 group-hover:rotate-90"></i>
-              <span>Показать ещё {projectsPerLoad} проекта</span>
+              <span>Показать ещё</span>
               <i className="fas fa-arrow-down text-xl transition-transform duration-500 group-hover:translate-y-1"></i>
             </span>
 

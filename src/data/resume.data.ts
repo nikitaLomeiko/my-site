@@ -471,8 +471,48 @@ export const resumeData: IResumeData = {
       ],
     },
     {
-      projectUrl: "https://nikitalomeiko.github.io/sort-visual/",
-      repositoryUrl: "https://github.com/nikitaLomeiko/sort-visual",
+      projectUrl: "https://nikitalomeiko.github.io/pressfeed/",
+      repositoryUrl: "https://github.com/nikitaLomeiko/pressfeed",
+      title: "Pressfeed",
+      isCompanyProject: false,
+      isPetProject: true,
+      isStartupProject: false,
+      isTestProject: false,
+      subtitle: "Куратор по работе с сервисом Pressfeed",
+      iconClass: "fa fa-user text-2xl",
+      descriptions: [
+        "Сверстал сайт по макету, совпадение с макетом около 98%. Добавил множества анимаций и интерактивности на сайт. Продемонстрирована скороть работы, качество, адаптивность и интерактивность",
+      ],
+      languages: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "AOS",
+        "lenis",
+        "rellax",
+        "glow.js",
+      ],
+      label: "Достижения",
+      labelList: [
+        {
+          classIcon: "fas fa-star text-blue-400 mt-1 mr-3",
+          label:
+            "Создал высококачественный сайт с точным соответствием макету и богатой анимацией, продемонстрировав свои навыки в верстке",
+        },
+        {
+          classIcon: "fas fa-tachometer-alt text-purple-400 mt-1 mr-3",
+          label: "В короткие сроки уложил разработку и деплой сайта",
+        },
+        {
+          classIcon: "fas fa-play text-green-400 mt-1 mr-3",
+          label:
+            "Реализовал множество анимаций и интерактивных элементов, что значительно улучшило пользовательский опыт",
+        },
+      ],
+    },
+    {
+      projectUrl: "https://nikitalomeiko.github.io/dstu_test/",
+      repositoryUrl: "https://github.com/nikitaLomeiko/dstu_test",
       title: "Тестовое задание для ДГТУ",
       isCompanyProject: false,
       isPetProject: false,
