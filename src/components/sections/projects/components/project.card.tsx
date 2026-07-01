@@ -1,5 +1,11 @@
 import { IProject } from "@/types/resume.type";
 
+function imgPath(src: string): string {
+  if (src.startsWith("http://") || src.startsWith("https://")) return src;
+  const basePath = process.env.NODE_ENV === "production" ? "/my-site" : "";
+  return `${basePath}${src}`;
+}
+
 interface IProps extends IProject {
   index: number;
 }
@@ -15,6 +21,7 @@ export const ProjectCard: React.FC<IProps> = (props) => {
     title,
     repositoryUrl,
     projectUrl,
+    imageUrl,
     index,
     isCompanyProject = false,
     isPetProject = false,
@@ -27,6 +34,28 @@ export const ProjectCard: React.FC<IProps> = (props) => {
       key={index}
       className="glass rounded-3xl p-5 sm:p-8 flex flex-col h-full relative"
     >
+      {imageUrl && (
+        <div
+          className="relative -mx-5 sm:-mx-8 -mt-5 sm:-mt-8 mb-8 overflow-hidden p-2"
+          style={{ borderRadius: "24px 24px 0 0" }}
+        >
+          <img
+            src={imgPath(imageUrl)}
+            alt={title}
+            className="w-full aspect-video object-cover rounded-2xl"
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse at center, transparent 65%, rgba(0,0,0,0.3) 100%)",
+              boxShadow: "inset 0 0 15px rgba(0,0,0,0.2)",
+              backdropFilter: "blur(0.5px)",
+              WebkitBackdropFilter: "blur(0.5px)",
+            }}
+          />
+        </div>
+      )}
       {isCompanyProject && (
         <div className="absolute -top-3 right-4 bg-red-700 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg z-10">
           Проект в компании

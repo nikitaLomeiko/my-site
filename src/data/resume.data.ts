@@ -230,6 +230,7 @@ export const resumeData: IResumeData = {
       isPetProject: false,
       isStartupProject: true,
       isTestProject: false,
+      imageUrl: "/media/project_photos/octoput.jpg",
       title: "Сайт для онлайн обучения программированию на основе AI",
       subtitle: "Стартап",
       iconClass: "fa fa-university text-2xl",
@@ -272,6 +273,7 @@ export const resumeData: IResumeData = {
       isPetProject: false,
       isStartupProject: false,
       isTestProject: false,
+      imageUrl: "/media/project_photos/mos_okna.jpg",
       title: "Сайт для продажи окон по Москве и МО",
       subtitle: "Сайт разработан в команде Rocket Dev",
       iconClass: "fa fa-window-maximize text-2xl",
@@ -303,6 +305,7 @@ export const resumeData: IResumeData = {
       projectUrl: "https://www.mosokna.ru/",
     },
     {
+      imageUrl: "/media/project_photos/dondevcon.jpg",
       title: "Информация о конференциях Rocket Dev",
       isCompanyProject: true,
       isPetProject: false,
@@ -339,6 +342,7 @@ export const resumeData: IResumeData = {
       projectUrl: "https://ddconf.ru/",
     },
     {
+      imageUrl: "/media/project_photos/rbru_other.jpg",
       title: "Остальные проекты Rocket Dev",
       isCompanyProject: true,
       isPetProject: false,
@@ -380,6 +384,7 @@ export const resumeData: IResumeData = {
     {
       projectUrl: "https://nikitalomeiko.github.io/docker.net.designer/",
       repositoryUrl: "https://github.com/nikitaLomeiko/docker.net.designer",
+      imageUrl: "/media/project_photos/docker.jpg",
       title: "docker.net.designer",
       isCompanyProject: false,
       isPetProject: true,
@@ -425,6 +430,7 @@ export const resumeData: IResumeData = {
     {
       projectUrl: "https://nikitalomeiko.github.io/sort-visual/",
       repositoryUrl: "https://github.com/nikitaLomeiko/sort-visual",
+      imageUrl: "/media/project_photos/sort.jpg",
       title: "Визуализация сортировок",
       isCompanyProject: false,
       isPetProject: true,
@@ -473,6 +479,7 @@ export const resumeData: IResumeData = {
     {
       projectUrl: "https://nikitalomeiko.github.io/pressfeed/",
       repositoryUrl: "https://github.com/nikitaLomeiko/pressfeed",
+      imageUrl: "/media/project_photos/pressfeed.jpg",
       title: "Pressfeed",
       isCompanyProject: false,
       isPetProject: true,
@@ -513,6 +520,7 @@ export const resumeData: IResumeData = {
     {
       projectUrl: "https://nikitalomeiko.github.io/dstu_test/",
       repositoryUrl: "https://github.com/nikitaLomeiko/dstu_test",
+      imageUrl: "/media/project_photos/dstu.jpg",
       title: "Тестовое задание для ДГТУ",
       isCompanyProject: false,
       isPetProject: false,
@@ -541,6 +549,7 @@ export const resumeData: IResumeData = {
     {
       repositoryUrl:
         "https://github.com/nikitaLomeiko/rocket_business_test.git",
+      imageUrl: "/media/project_photos/rbru.jpg",
       title: "Тестовое задание для Rocket Business",
       isCompanyProject: false,
       isPetProject: false,

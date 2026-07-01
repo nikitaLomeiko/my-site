@@ -18,6 +18,7 @@ export interface IRecommendation {
 
 export interface IProject {
   projectUrl?: string;
+  imageUrl?: string;
   title: string;
   subtitle: string;
   iconClass: string;
