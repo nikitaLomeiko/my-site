@@ -25,6 +25,20 @@ export const ProfileCard: React.FC<IProps> = (props) => {
         </div>
       </div>
 
+      <a
+        href="/blog"
+        className="mb-6 glass-dark rounded-2xl p-4 flex items-center gap-4 hover:scale-[1.02] transition-all duration-300 group cursor-pointer"
+      >
+        <div className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center bg-purple-700/30 group-hover:bg-purple-700/40 transition-colors">
+          <i className="fas fa-microphone-alt text-lg text-purple-700"></i>
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="font-bold text-sm text-purple-700">Никита Вещает</p>
+          <p className="opacity-60 text-xs truncate">Мои мысли о разработке</p>
+        </div>
+        <i className="fas fa-arrow-right text-purple-700 text-sm opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300"></i>
+      </a>
+
       <div className="space-y-4 md:space-y-5">
         <ContactItem
           icon="fa-map-marker-alt"

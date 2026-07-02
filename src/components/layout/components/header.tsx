@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { navigationConf } from "../config/navigation.conf";
 
 import { Navigation } from "./ui/navigation";
@@ -20,7 +21,9 @@ export const Header: React.FC<IProps> = ({ name }) => {
       style={{ backdropFilter: "blur(15px)" }}
     >
       <div className="max-w-7xl mx-auto flex flex-row items-center justify-between">
-        <div className="text-xl font-bold text-purple-700">{name}</div>
+        <Link href="/" className="text-xl font-bold text-purple-700 hover:opacity-80 transition-opacity">
+          {name}
+        </Link>
 
         <div className="flex flex-row items-center gap-10">
           <Navigation navigationConf={navigationConf} />

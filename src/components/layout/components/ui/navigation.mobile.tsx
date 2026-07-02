@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { INavigationConfItem } from "../../config/navigation.conf";
 
 interface IProps {
@@ -16,14 +17,14 @@ export const NavigationMobile: React.FC<IProps> = ({
     >
       <div className="flex flex-col space-y-5">
         {navigationConf.map((item, index) => (
-          <a
+          <Link
             key={index}
             href={item.link}
             onClick={() => onHideMenu()}
             className="hover:text-purple-300 text-[var(--color-primary)] transition-all duration-400 py-3 hover:pl-4 text-center"
           >
             {item.name}
-          </a>
+          </Link>
         ))}
       </div>
     </div>

@@ -6,22 +6,26 @@ export interface INavigationConfItem {
 export const navigationConf: INavigationConfItem[] = [
   {
     name: "Обо мне",
-    link: "#about",
+    link: "/#about",
   },
   {
     name: "Опыт",
-    link: "#experience",
+    link: "/#experience",
   },
   {
     name: "Навыки",
-    link: "#skills",
+    link: "/#skills",
   },
   {
     name: "Проекты",
-    link: "#projects",
+    link: "/#projects",
+  },
+  {
+    name: "Блог",
+    link: "/blog",
   },
   {
     name: "Контакты",
-    link: "#contacts",
+    link: "/#contacts",
   },
 ];
